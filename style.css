@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt&family=Raleway:wght@300;400&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #141b29, #0c111b 300px);
+  font-family: "Roboto";
+  height: 241vh;
+}
+
+.navbar {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #141b29, #0c111b 300px);
+  position: fixed;
+  top: 0;
+  padding: 0px 0px;
+  z-index: 9;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(220, 219, 224);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  padding-left: 3rem;
+}
+.left-section h5 {
+  margin: 0px 25px;
+  color: rgb(169, 166, 175);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.disney-logo {
+  height: 100%;
+  width: 100px;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subscribe-btn {
+  height: 40%;
+  width: 110px;
+  margin: 0px 20px;
+  margin-left: 50px;
+  padding: 0.1rem;
+  font-size: 14px;
+  font-weight: 600;
+  background: #1f80e0;
+  color: #fff;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 3px;
+}
+
+.login {
+  color: rgb(221, 218, 224);
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin: 0px 10px;
+  margin-right: 30px;
+  padding-bottom: 3px;
+}
+
+.search {
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #aaa;
+  text-transform: capitalize;
+  color: rgb(169, 166, 175);
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  width: 250px;
+  height: 30px;
+  margin-right: 30px;
+  transition: all 0.5s;
+}
+
+.search:focus {
+  width: 400px;
+  border-color: #1f80e0;
+}
+.search::placeholder {
+  color: rgb(169, 166, 175);
+  font-weight: 300;
+}
+
+.glide {
+  margin: 95px 0px 170px 0px;
+  height: 57vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.glide__track {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 0;
+  padding: 0;
+}
+.glide__slides {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.glide__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.glide__slide img {
+  margin: 0rem 0rem;
+}
+.placard {
+  border: 2px solid #040b14;
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #030b17;
+  border-radius: 0.5rem;
+  background: rgb(3, 0, 19);
+}
+.placard-text {
+  width: 40%;
+  height: 100%;
+  color: white;
+  padding: 8rem 0rem;
+  padding-left: 4rem;
+}
+.placard-text h2 {
+  width: 78%;
+  font-family: "Roboto";
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #1f80e0;
+  padding-bottom: 1rem;
+  padding-right: 3rem;
+}
+.placard-text p {
+  width: 90%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 3rem;
+  letter-spacing: 2px;
+  padding-right: 2.5rem;
+}
+
+.placard-image {
+  height: 100%;
+  width: 60%;
+  object-fit: cover;
+}
+.placard-image img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.glide__arrow {
+  height: 60px;
+  width: 50px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glide__arrow img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.glide:hover .glide__arrow img {
+  opacity: 1;
+}
+
+.glide2:hover .glide__arrow img {
+  opacity: 1;
+}
+
+.mega-channels-container {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -80px 0px;
+}
+
+.channels-container {
+  width: 94%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -127px 0px;
+  padding: 0;
+}
+
+.channels {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 19%;
+}
+
+.channels img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+  z-index: 7;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.video- {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  display: none;
+  border-radius: 0.5rem;
+}
+
+.channels:hover .channels img {
+  display: none;
+}
+.channels:hover .video- {
+  display: block;
+}
+
+.glide2-container {
+  width: 100%;
+  height: 34vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.glide2 {
+  width: 94%;
+  height: 100%;
+}
+
+.glide__track2 {
+  width: 100%;
+  height: 100%;
+}
+
+.glide2 ul {
+  width: 90%;
+  height: 100%;
+}
+.glide__slides2 li {
+  object-fit: cover;
+}
+
+.glide__slide2 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin: 0rem 5rem;
+  padding: 0rem 0.2rem;
+}
+.recommend-heading {
+  width: 30%;
+  color: white;
+  font-size: 1.7rem;
+  font-family: "Roboto";
+  position: relative;
+  top: 11rem;
+  left: 3.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.glide3-container {
+  width: 100%;
+  height: 34vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+}
+
+.glide3 {
+  width: 94%;
+  height: 100%;
+}
+
+.glide__track3 {
+  width: 100%;
+  height: 100%;
+}
+
+.glide3 ul {
+  width: 90%;
+  height: 100%;
+}
+.glide__slides3 li {
+  object-fit: cover;
+}
+
+.glide__slide3 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin: 0rem 5rem;
+  padding: 0rem 0rem;
+}
+
+.glide3:hover .glide__arrow img {
+  opacity: 1;
+}
+.popular-heading {
+  width: 30%;
+  color: white;
+  font-size: 1.7rem;
+  font-family: "Roboto";
+  position: relative;
+  top: 3.6rem;
+  left: 3.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.glide4-container {
+  width: 100%;
+  height: 16vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+}
+
+.glide4 {
+  width: 94%;
+  height: 100%;
+}
+
+.glide__track4 {
+  width: 100%;
+  height: 100%;
+}
+
+.glide4 ul {
+  width: 90%;
+  height: 100%;
+}
+.glide__slides4 li {
+  object-fit: cover;
+  padding: 0rem 0rem;
+}
+
+.glide__slide4 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin: 0rem 0rem;
+  padding: 0rem 0rem;
+}
+
+.glide4:hover .glide__arrow img {
+  opacity: 1;
+}
+
+.trending-heading {
+  width: 30%;
+  color: white;
+  font-size: 1.7rem;
+  font-family: "Roboto";
+  position: relative;
+  top: 3.6rem;
+  left: 3.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.footer {
+  width: 95%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin: 5rem 2rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+.footer-left-section {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left-upper-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 2rem 0rem;
+  margin-bottom: 1rem;
+}
+.footer-left-upper-section h4 {
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.7px;
+  font-size: 1rem;
+  font-weight: 100;
+  color: rgb(201, 194, 194);
+}
+
+.footer-left-lower-section p {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 1.3px;
+  padding-left: 1rem;
+  color: rgb(201, 194, 194);
+}
+
+.footer-right-section {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-right-section h3 {
+  margin-left: 26rem;
+  margin-top: 2.1rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding-right: 2rem;
+  letter-spacing: 1px;
+  color: rgb(201, 194, 194);
+}
+
+.social-icons {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid red;
+  padding-right: 2rem;
+}
+
+.fab {
+  height: 35px;
+  width: 35px;
+  color: rgb(201, 194, 194);
+  background-color: #fff;
+  border: 1px solid red;
+}

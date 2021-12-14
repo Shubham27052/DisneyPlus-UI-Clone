@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+Clone</title>
+
+<!-- Required Core stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<!-- Optional Theme stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+  
+    <link rel="stylesheet" href="style.css">
+
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        
+        <section class="left-section">
+            <img src="./images/logo.PNG" alt="" class="disney-logo">
+            <h5>TV</h5>
+            <h5>Movies</h5>
+            <h5>Sports</h5>
+            <h5>Premium</h5>
+            <h5>Disney+</h5>
+        </section>
+        
+        <section class="right-section">
+            <input type="text" class="search" placeholder="Search">
+            <button class="subscribe-btn">SUBSCRIBE</button>
+            <h5 class="login" >LOGIN</h5>
+        </section>
+
+
+
+
+    </nav>
+ 
+    
+<div class="glide">
+    
+    <div data-glide-el="track" class="glide__track">
+        <ul class="glide__slides">
+            <li class="glide__slide">
+                <div class="placard">
+                    <div class="placard-text">
+                        <h2>LOKI</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui nostrum iste ipsum facere tenetur asperiores suscipit a numquam quo voluptatum, totam repellat temporibus doloremque facilis beatae! Ipsam, veniam nostrum! </p>
+                    </div>
+                    
+                    <div class="placard-image">
+                        <img src = './images/slider 1.PNG'>
+
+                    </div>
+                </div>
+
+
+
+            </li>
+            <li class="glide__slide"><div class="placard">
+                <div class="placard-text">
+                    <h2>The Falcon and the Winter Soldier</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui nostrum iste ipsum facere tenetur asperiores
+                    suscipit a numquam quo voluptatum, totam repellat temporibus doloremque facilis beatae! Ipsam, veniam nostrum!</p>
+                </div>
+                <div class="placard-image">
+                    <img src='./images/slider 2.PNG'>
+            
+                </div>
+            </div></li>
+            <li class="glide__slide"><div class="placard">
+                <div class="placard-text">
+                    <h2>Wanda Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui nostrum iste ipsum facere tenetur asperiores
+                    suscipit a numquam quo voluptatum, totam repellat temporibus doloremque facilis beatae! Ipsam, veniam nostrum!</p>
+                </div>
+                <div class="placard-image">
+                    <img src='./images/slider 3.PNG'>
+            
+                </div>
+            </div></li>
+            <li class="glide__slide"><div class="placard">
+                <div class="placard-text">
+                    <h2>Raya and The Last Dragon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui nostrum iste ipsum facere tenetur asperiores
+                    suscipit a numquam quo voluptatum, totam repellat temporibus doloremque facilis beatae! Ipsam, veniam nostrum!</p>
+                </div>
+                <div class="placard-image">
+                    <img src='./images/slider 4.PNG'>
+            
+                </div>
+            </div></li>
+            <li class="glide__slide"><div class="placard">
+                <div class="placard-text">
+                    <h2>LUCA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui nostrum iste ipsum facere tenetur asperiores
+                    suscipit a numquam quo voluptatum, totam repellat temporibus doloremque facilis beatae! Ipsam, veniam nostrum!</p>
+                </div>
+                <div class="placard-image">
+                    <img src='./images/slider 5.PNG'>
+            
+                </div>
+            </div></li>
+        </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src='./images/pre.png'></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src='./images/nxt.png'></button>
+    </div>
+</div>
+
+<div class="mega-channels-container">
+    <div class="channels-container">
+        <div class="channels">
+            <img src='./images/disney.PNG'>
+            <div class="video">
+                <video src='./videos/disney.mp4' onmouseover="this.play();" onmouseout='this.pause();' loop class='video-'></video>
+            </div>
+    
+        </div>
+        <div class="channels">
+            <img src='./images/pixar.PNG'>
+            <video src='./videos/pixar.mp4' onmouseover="this.play();" onmouseout='this.pause();' mute loop class='video-'></video>
+    
+    
+        </div>
+        <div class="channels">
+    
+            <img src='./images/marvel.PNG'>
+            <video src='./videos/marvel.mp4' onmouseover="this.play();" onmouseout='this.pause();' mute loop class='video-'></video>
+    
+        </div>
+        <div class="channels">
+    
+            <img src='./images/star-wars.PNG'>
+            <video  src='./videos/star-war.mp4' onmouseover="this.play();" onmouseout='this.pause();' mute loop class='video-' ></video>
+    
+        </div>
+        <div class="channels">
+            <img src='./images/geographic.PNG'>
+            <video src='./videos/geographic.mp4' onmouseover="this.play();" onmouseout='this.pause();' mute loop class='video-'></video>
+               
+    
+        </div>
+    </div>
+
+</div>
+
+<h2 class='recommend-heading'>Recommended for you</h2> 
+
+<div class="glide2-container">
+    <div class="glide2">
+        <div class="glide__track2" data-glide-el="track">
+            <ul class="glide__slides2">
+                <li class="glide__slide2"><img src="./images/poster 1.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 2.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 3.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 4.png" /></li>
+                <li class="glide__slide2"><img src="./images/poster 5.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 6.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 7.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 8.png" /></li>
+                <li class="glide__slide2"><img src="./images/poster 9.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 10.png"/> </li>
+                <li class="glide__slide2"><img src="./images/poster 11.png" /></li>
+                <li class="glide__slide2"><img src="./images/poster 12.png"/> </li>
+    
+            </ul>
+    
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src='./images/pre.png'></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src='./images/nxt.png'></button>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+
+</div>
+
+<h2 class='trending-heading'>Latest and Trending</h2>
+<div class="glide4-container">
+    <div class="glide4">
+        <div class="glide__track4" data-glide-el="track">
+            <ul class="glide__slides4">
+                <li class="glide__slide4"><img src="./images/glider1.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider2.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider3.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider4.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider5.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider6.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider7.jfif" /></li>
+
+                <li class="glide__slide4"><img src="./images/glider8.jfif" /></li>
+                <li class="glide__slide4"><img src="./images/glider9.webp" /></li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/pre.png" /></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/nxt.png" /></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2 class='popular-heading'>Popular Shows</h2>
+
+<div class="glide3-container">
+    <div class="glide3">
+        <div class="glide__track3" data-glide-el="track">
+            <ul class="glide__slides3">
+                <li class="glide__slide3"><img src="./images/poster 5.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 6.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 7.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 8.png" /></li>
+                <li class="glide__slide3"><img src="./images/poster 9.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 10.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 11.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 12.png" /></li>
+                <li class="glide__slide3"><img src="./images/poster 1.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 2.png" /> </li>
+                <li class="glide__slide3"><img src="./images/poster 3.png" /></li>
+                <li class="glide__slide3"><img src="./images/poster 4.png" /> </li>
+
+            </ul>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src='./images/pre.png'></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                        src='./images/nxt.png'></button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<!-- footer -->
+
+<footer class = 'footer'>
+    <section class="footer-left-section">
+        <section class="footer-left-upper-section">
+            <h4>About Disney+</h4>
+            <h4>Terms of Use</h4>
+            <h4>Privacy Policy</h4>
+            <h4>FAQ</h4>
+            <h4>Feedback</h4>
+            <h4>Careers</h4>
+        </section>
+        
+
+        <section class="footer-left-lower-section">
+            <p>© 2021 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks
+            of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.
+            </p>
+        </section>
+
+    </section>
+
+    <section class="footer-right-section">
+        <h3>Connect with us</h3>
+        <!-- <div class="social-icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+
+        </div> -->
+    </section>
+</footer>
+
+
+
+
+
+
+<!-- Glide 1 -->
+<script src="./app.js"></script>
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+
+<script>
+    const config = {
+        type:'carousel',
+        perView: 1.05,
+        autoplay: 4000,
+        focusAt:'center',
+        animationTimingFunc:'linear'
+        
+
+    }
+    new Glide('.glide', config).mount()
+
+     const config2 = {
+            type: 'carousel',
+            perView: 7,
+            autoplay: 3000
+
+
+        }
+
+    new Glide('.glide2', config2).mount()
+
+    const config3 = {
+        type: 'carousel',
+        perView: 7,
+        autoplay: 3000
+
+
+    }
+
+    new Glide('.glide3', config3).mount()
+
+    const config4 = {
+            type: 'carousel',
+            perView: 6,
+            autoplay: 3000
+
+
+        }
+
+        new Glide('.glide4', config4).mount()
+
+
+
+</script>
+
+<script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+<script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+<script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
+
+</body>
+</html>
